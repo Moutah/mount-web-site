@@ -1,3 +1,10 @@
+import "normalize.css";
+import "./css/about.css";
+import "./css/animations.css";
+import "./css/logo.css";
+import "./css/style.css";
+import "./css/swiss-flag.css";
+
 (() => {
   function substituteEmail() {
     const placeholder = document.getElementById("mail-placeholder");
