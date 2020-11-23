@@ -8,7 +8,8 @@ import "./css/swiss-flag.css";
 (() => {
   function substituteEmail() {
     const placeholder = document.getElementById("mail-placeholder");
-    placeholder.innerHTML = `<a href="mailto:hello@mountweb.ch">hello@mountweb.ch</a>`;
+    const mailIcon = placeholder.querySelector(".bi-envelope");
+    placeholder.innerHTML = `<a href="mailto:hello@mountweb.ch">${mailIcon.outerHTML} hello@mountweb.ch</a>`;
   }
 
   function printConsoleWelcome() {
