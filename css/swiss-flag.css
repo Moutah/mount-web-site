@@ -1,0 +1,13 @@
+#swiss-flag {
+    margin: 0 0.1em;
+    width: 0.8em;
+    height: 0.8em;
+}
+
+#swiss-flag rect {
+    fill: #ae1833;
+}
+
+#swiss-flag polygon {
+    fill: #F0F0F0;
+}
