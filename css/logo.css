@@ -7,6 +7,7 @@
 }
 
 svg#logo {
+    margin-top: 8rem;
     width: 80%;
     max-width: var(--logoWidth);
     animation: pulse 0.05s linear var(--RunningDashDuration) forwards;

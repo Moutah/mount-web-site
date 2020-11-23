@@ -1,0 +1,16 @@
+#about {
+    font-size: 1.4rem;
+}
+
+#contact {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+#contact .bi-envelope {
+    margin: 0 0.5em;
+}
+
+#contact .bi-at {
+    margin: 0 -0.2em;
+}
