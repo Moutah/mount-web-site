@@ -1,8 +1,12 @@
 #about {
+    opacity: 0;
+    animation: fadeIn 1.2s linear calc(1.6 * var(--RunningDashDuration)) forwards;
     font-size: 1.4rem;
 }
 
 #contact {
+    opacity: 0;
+    animation: fadeIn 1.2s linear calc(2.2 * var(--RunningDashDuration)) forwards;
     font-size: 1rem;
     color: var(--ColorTextMuted)
 }

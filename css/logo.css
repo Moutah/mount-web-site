@@ -6,8 +6,8 @@
     --slopeDelayCoef: 0.3828558957234825;
 }
 
-svg#logo {
-    margin-top: 8rem;
+#logo {
+    margin: 6rem 0 2rem;
     width: 80%;
     max-width: var(--logoWidth);
     animation: pulse 0.05s linear var(--RunningDashDuration) forwards;
@@ -41,12 +41,9 @@ g#filled polyline {
     stroke: transparent;
 }
 
-#logo-text {
-    animation: fadeIn 0.6s linear calc(1.6 * var(--RunningDashDuration)) forwards;
+#logo h1 {
+    animation: fadeIn 0.01s linear var(--RunningDashDuration) forwards;
     opacity: 0;
-}
-
-#logo-text h1 {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 42px;
     font-weight: 300;
@@ -55,7 +52,7 @@ g#filled polyline {
 }
 
 @media screen and (min-width: 530px) {
-    #logo-text h1 {
+    #logo h1 {
         font-size: 62px;
     }
 }
