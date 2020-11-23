@@ -26,9 +26,7 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: "./index.html",
-      // inject: false,
-      // chunks: ['index'],
-      // filename: 'index.html'
+      favicon: "./favicon.png",
     }),
   ],
   optimization: {
