@@ -1,0 +1,27 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --Background: #313233;
+        --ColorText: #fafbfc;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --Background: #fafbfc;
+        --ColorText: #111213;
+    }
+}
+
+body {
+    background: var(--Background);
+    color: var(--ColorText);
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

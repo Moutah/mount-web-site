@@ -6,13 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mount Web</title>
 
-    <link type="text/css" rel="stylesheet" href="./normalize.min.css" />
-    <link type="text/css" rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="./css/normalize.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/animations.css" />
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+    <link type="text/css" rel="stylesheet" href="./css/logo.css" />
 </head>
 
 <body>
-    <h1>Hello Mount Web!</h1>
-    <p>Website under construction</p>
+    <main>
+        <svg id="logo" viewBox="0 0 302 204">
+            <g id="lines">
+                <polyline id="peaks" points="1,201.912 101,28.712 135,87.6 185,1 301,201.912 201,201.912" fill="none"></polyline>
+                <polyline id="slope" points="135,87.6 201,201.912 1,201.912" fill="none"></polyline>
+            </g>
+            <g id="filled">
+                <polyline id="back" points="135,87.6 185,1 301,201.912 201,201.912" fill="#103980"></polyline>
+                <polyline id="front" points="1,201.912 101,28.712 201,201.912" fill="#5B82C4"></polyline>
+            </g>
+        </svg>
+        <div id="logo-text">
+            <h1>Mount Web</h1>
+        </div>
+    </main>
 
     <script src="./index.js"></script>
 </body>

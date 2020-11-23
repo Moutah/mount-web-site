@@ -1,0 +1,80 @@
+:root {
+    --logoWidth: 420px;
+    --PeaksLength: 699.98681640625;
+    --RunningDashDuration: 1s;
+    --FadeStartCoef: 0.6;
+    --slopeDelayCoef: 0.3828558957234825;
+}
+
+svg#logo {
+    width: 80%;
+    max-width: var(--logoWidth);
+    animation: pulse 0.05s linear var(--RunningDashDuration) forwards;
+}
+
+g#lines {
+    animation: fadeOut calc((1 - var(--FadeStartCoef)) * var(--RunningDashDuration)) linear calc(var(--FadeStartCoef) * var(--RunningDashDuration)) forwards;
+}
+
+g#lines polyline {
+    stroke: var(--ColorText)
+}
+
+g#filled {
+    opacity: 0;
+    animation: fadeIn 0.01s linear var(--RunningDashDuration) forwards;
+}
+
+polyline {
+    stroke-width: 1;
+    stroke-dasharray: var(--PeaksLength);
+    stroke-dashoffset: var(--PeaksLength);
+    animation: runningDash var(--RunningDashDuration) linear forwards;
+}
+
+polyline#slope {
+    animation-delay: calc(var(--slopeDelayCoef) * var(--RunningDashDuration));
+}
+
+g#filled polyline {
+    stroke: transparent;
+}
+
+#logo-text {
+    animation: fadeIn 0.6s linear calc(1.6 * var(--RunningDashDuration)) forwards;
+    opacity: 0;
+}
+
+#logo-text h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media screen and (min-width: 530px) {
+    #logo-text h1 {
+        font-size: 62px;
+    }
+}
+
+@keyframes runningDash {
+    from {
+        stroke-dashoffset: var(--PeaksLength);
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
