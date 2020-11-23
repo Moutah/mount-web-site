@@ -2,6 +2,8 @@
     :root {
         --Background: #313233;
         --ColorText: #fafbfc;
+        --ColorTextMuted: #cacbcc;
+        --ColorLinkHover: #e1e2e3;
     }
 }
 
@@ -9,6 +11,8 @@
     :root {
         --Background: #fafbfc;
         --ColorText: #111213;
+        --ColorTextMuted: #414243;
+        --ColorLinkHover: #010203;
     }
 }
 
