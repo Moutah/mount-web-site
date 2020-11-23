@@ -18,6 +18,10 @@ module.exports = {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
+      {
+        test: /\.(jpe?g|png|gif|ico)$/i,
+        use: ["file-loader?name=[name].[ext]"],
+      },
     ],
   },
 
@@ -27,6 +31,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./index.html",
       favicon: "./favicon.png",
+      // inject: false,
+      // chunks: ['index'],
+      // filename: 'index.html'
     }),
   ],
   optimization: {

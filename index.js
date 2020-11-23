@@ -4,6 +4,7 @@ import "./css/animations.css";
 import "./css/logo.css";
 import "./css/style.css";
 import "./css/swiss-flag.css";
+import "./og-image.png";
 
 (() => {
   function substituteEmail() {
